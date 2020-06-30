@@ -6,7 +6,7 @@ def LatestNews():
     
   url=('http://newsapi.org/v2/top-headlines?'
        'sources=bbc-news&'
-       'apiKey=7b2382cdd48b4f6a9964745f415abe6f')
+       'apiKey="type in your api key"')
   res=requests.get(url).json()
   global root
   top_news=res["articles"]
@@ -19,10 +19,6 @@ def LatestNews():
     T.pack() 
     T.insert(END, results[i])
     print('\n')
-
-
-   
-
 
       
 if __name__ == '__main__': 
